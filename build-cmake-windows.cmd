@@ -16,7 +16,7 @@ if "%~1"=="debug" (set tbb_debug="-DTBB_USE_DEBUG_BUILD:INT=1")
 echo "configuring for %tbb_debug% *******"
 
 REM // USE_PTEX=0 because ptex integration is currently broken with the latest version of ptex
-cmake ..\..\USD-win-ip ^
+cmake ..\..\USD ^
       -DPXR_VALIDATE_GENERATED_CODE=ON ^
       -DPXR_BUILD_MAYA_PLUGIN=1 ^
       -DPXR_BUILD_KATANA_PLUGIN=0 ^
